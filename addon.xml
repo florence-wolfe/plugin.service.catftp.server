@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.service.catftp.server" name="CatFTP Server" version="0.0.1~alpha1" provider-name="Florence Wolfe">
+  <requires>
+    <import addon="xbmc.python" version="3.0.1" />
+  </requires>
+  <extension library="resources/lib/service.py" point="xbmc.service"/>
+  <extension point="xbmc.addon.metadata">
+    <summary>Run an FTP Server from Kodi</summary>
+    <description>Starts a minimally configurable FTP Server to provide external read/write file access to your Kodi file system from an external source. This is useful for situations where data access can be particularly challenging. USE AT YOUR OWN RISK</description>
+    <disclaimer>There is little-to-no security measures baked into this add-on beyond the FTP server supporting SFTP and standard ports. It's highly recommended not to expose this over a public network. USE AT YOUR OWN RISK.</disclaimer>
+    <language>en</language>
+    <platform>all</platform>
+    <license>MIT</license>
+    <email>florencewolfe@pm.me</email>
+    <source>http://github.com/florence-wolfe/plugin.service.catftp.server</source>
+    <news>
+    </news>
+    <assets>
+        <icon>resources/images/icon.png</icon>
+    </assets>
+  </extension>
+</addon>

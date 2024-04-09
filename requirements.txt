@@ -1,0 +1,3 @@
+Kodistubs==21.0.0
+# Keeping here for posterity purposes so that contributors are away of the fork
+# pyftpdlib==1.5.9

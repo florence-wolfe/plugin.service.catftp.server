@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+  <category label="General">
+    <setting id="ftp_port" type="number" label="FTP Port" default="2121"/>
+    <setting id="ftp_username" type="text" label="FTP Username" default="kodi"/>
+    <setting id="ftp_password" type="text" label="FTP Password" default="kodi" option="hidden"/>
+    <setting id="ftp_secure" type="bool" label="Enable FTPS (Secure FTP)" enable="false" default="false"/>
+  </category>
+</settings>
