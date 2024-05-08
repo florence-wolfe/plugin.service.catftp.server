@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.service.catftp.server" name="CatFTP Server" version="0.0.1~alpha1" provider-name="Florence Wolfe">
+<addon id="plugin.service.catftp.server" name="CatFTP Server" version="0.0.1~alpha2" provider-name="Florence Wolfe">
   <requires>
     <import addon="xbmc.python" version="3.0.1" />
     <import addon="script.module.pyftpdlib" version="1.5.9" />
