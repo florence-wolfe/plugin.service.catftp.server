@@ -2,7 +2,7 @@ import xbmcvfs
 import xbmc
 from modules.logger import log
 from modules.ftp_server import run_ftp_server
-from modules.constants import ADDON_NAME as addon_name, addon
+from modules.constants import ADDON_NAME, addon
 
 
 if __name__ == "__main__":
@@ -20,4 +20,4 @@ if __name__ == "__main__":
     while not monitor.abortRequested():
         if monitor.waitForAbort(5):
             break
-    log(f"Stopping {addon_name}")
+    log(f"Stopping {ADDON_NAME}")

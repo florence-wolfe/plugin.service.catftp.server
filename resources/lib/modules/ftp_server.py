@@ -1,10 +1,10 @@
 import os
 import xbmc
+from pyftpdlib.authorizers import DummyAuthorizer
+from pyftpdlib.handlers import FTPHandler
+from pyftpdlib.servers import FTPServer
 from modules.logger import log
 from modules.constants import ADDON_NAME
-from modules.pyftpdlib.authorizers import DummyAuthorizer
-from modules.pyftpdlib.handlers import FTPHandler
-from modules.pyftpdlib.servers import FTPServer
 
 
 def run_ftp_server(root_dir: str, port: int, username: str, password: str, secure: bool):
@@ -24,7 +24,7 @@ def run_ftp_server(root_dir: str, port: int, username: str, password: str, secur
             handler.certfile = os.path.join(root_dir, "server.crt")
             handler.keyfile = os.path.join(root_dir, "server.key")
         
-        server = FTPServer(("0.0.0.0", port), handler)
+            server = FTPServer(("0.0.0.0", port), handler)
         log(f"Starting {ADDON_NAME} on port {port}")
         server.serve_forever()
     except Exception as e:

@@ -2,6 +2,7 @@
 <addon id="plugin.service.catftp.server" name="CatFTP Server" version="0.0.1~alpha1" provider-name="Florence Wolfe">
   <requires>
     <import addon="xbmc.python" version="3.0.1" />
+    <import addon="script.module.pyftpdlib" version="1.5.9" />
   </requires>
   <extension library="resources/lib/service.py" point="xbmc.service"/>
   <extension point="xbmc.addon.metadata">
@@ -12,7 +13,7 @@
     <platform>all</platform>
     <license>MIT</license>
     <email>florencewolfe@pm.me</email>
-    <source>http://github.com/florence-wolfe/plugin.service.catftp.server</source>
+    <source>https://github.com/florence-wolfe/plugin.service.catftp.server</source>
     <news>
     </news>
     <assets>
